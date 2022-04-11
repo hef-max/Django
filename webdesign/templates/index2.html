@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'styles2.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/bootstrap.css' %}">
+</head>
+<body class="bg-dark" style="background-color: #1a1c20;">
+	<header class="nav center">
+		<p class="logo text-white">LOGO</p>
+		<input type="checkbox" name="" class="checkBtn"/>
+		<ol class="center navbar-brand">
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Education</li></a>
+			<a href="#"><li>Experience</li></a>
+			<a href="#"><li>Projects</li></a>
+			<a href="#"><li>Contact</li></a>
+		</ol>
+	</header>
+
+	<section class="main">
+		<div class="box">
+			<h1 class="text-white">Hefry Anesti</h1>
+			<p>Data-Science</p>
+			<button class="btn">About</button>
+		</div>
+		<img src="{% static 'img/hefry-1.jpg' %}" alt="">
+	</section>
+
+
+	<script type="text/javascript" src="{% static 'bootstrap/bootstrap.js' %}"></script>
+
+</body>
+</html>

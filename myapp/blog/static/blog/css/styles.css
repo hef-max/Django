@@ -1,0 +1,9 @@
+.jumbotron{
+	background-image: url("/static/blog/img/drone2.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 60vh;
+}
+h1{
+	color: blue;
+}

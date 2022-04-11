@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+	<h1>{{title}}</h1>
+	<h3>{{heading}}</h3>
+
+	{% for post in Post %}
+
+	<h3>{{post.title}}</h3>
+	<p>{{post.body}}</p>
+
+	{% endfor %}
+
+	<h4>hey</h4>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME | kelastertutup.com</title>
+</head>
+<body>
+<h1>selamat datang kaka di home</h1>
+<h4>kontributor : {{kontributor}}</h4>
+
+<ul>
+    {% for link,name in nav%}
+    <li>
+        <a href="{{link}}" title="">{{name}}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

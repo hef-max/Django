@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'styles3.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/bootstrap.css' %}">
+</head>
+<body style="background-color: #f1f4d7">
+	<header class="nav center">
+		<p class="logo text-dark">LOGO</p>
+		<input type="checkbox" name="" class="checkBtn"/>
+		<ol class="center navbar-brand">
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Education</li></a>
+			<a href="#"><li>Experience</li></a>
+			<a href="#"><li>Projects</li></a>
+			<a href="#"><li>Contact</li></a>
+		</ol>
+	</header>
+
+	<section class="main">
+		<div class="box">
+			<h1 class="text-white display-5">Anggun Fatma</h1>
+			<p class="lead text-white" >Collage Student of IPB</p>
+			<button class="btn">About</button>
+		</div>
+		<img class="one" src="{% static 'img/anggun-2.jpg' %}">
+		<img class="two" src="{% static 'img/anggun-1.jpg' %}" alt="">
+	</section>
+
+
+	<script type="text/javascript" src="{% static 'bootstrap/bootstrap.js' %}"></script>
+
+</body>
+</html>

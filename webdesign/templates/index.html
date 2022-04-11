@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/bootstrap.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light.bg-gradient">
+	<h1 class="navbar-brand" style="padding-left: 10px;">logo<i class="bi bi-house-door"></i></h1>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="blog/">Blog</a>
+        </li>     
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+
+	<div class="container-fluid">
+		<div class="container">
+				<h1 class="text-dark display-4">Anggun Fatma</h1>
+				<p class="lead">College Student - IPB</p>	
+		</div>
+
+		<div class="container">
+			<img src="static/img/anggun-1.jpg" class="rounded float-end" alt="">
+		</div>
+	</div>	
+
+</div>
+
+
+
+<!-- <script type="text/javascript">
+var Timer = setInterval(Timer ,1000);
+function Timer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+ }
+</script> -->
+<script type="text/javascript" src="{% static 'bootstrap/bootstrap.js' %}"></script>
+
+</body>
+</html>

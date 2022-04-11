@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+  <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/desko.css' %}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">{{title}}</a>
+    
+      <h3 class="navbar-brand text-center">{{judul}}</h3>
+
+      <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+       <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+      </svg></a>
+  </div>
+
+</nav>
+
+
+<section>
+
+    <div class="hamburger">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>
+
+        <div class="sidebar">
+          <ul class="sidebar-items">
+            <li class="item">chapter 1</li>
+            <li class="item">chapter 2</li>
+            <li class="item">chapter 3</li>
+            <li class="item">chapter 4</li>
+            <li class="item">chapter 5</li>
+            <li class="item">chapter 6</li>
+          </ul>
+        </div>
+
+
+<div class="container-fluid">
+  <div class="image container bg-light shadow text-dark text-center">
+    <div class="row row-md">
+    <img src="{% static 'image/'%}">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="image container bg-light shadow text-dark text-center">
+    <div class="row row-md">
+    <img src="{% static 'image/'%}">
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!--   <section id="comments" class="body">
+    <header>
+      <h2>Comments</h2>
+    </header>
+
+    <ol id="posts-list" class="hfeed<?php echo($has_comments?' has-comments':''); ?>">
+      <li class="no-comments">Be the first to add a comment.</li>
+      <?php
+        foreach ($comments as &$comment) {
+          ?>
+          <li><article id="comment_<?php echo($comment['id']); ?>" class="hentry">  
+            <footer class="post-info">
+              <abbr class="published" title="<?php echo($comment['date']); ?>">
+                <?php echo( date('d F Y', strtotime($comment['date']) ) ); ?>
+              </abbr>
+
+              <address class="vcard author">
+                By <a class="url fn" href="#"><?php echo($comment['comment_author']); ?></a>
+              </address>
+            </footer>
+
+            <div class="entry-content">
+              <p><?php echo($comment['comment']); ?></p>
+            </div>
+          </article></li>
+          <?php
+        }
+      ?>
+    </ol>
+    
+    <div id="respond">
+
+      <h3>Leave a Comment</h3>
+
+      <form action="post_comment.php" method="post" id="commentform">
+
+        <label for="comment_author" class="required">Your name</label>
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+        
+        <label for="email" class="required">Your email</label>
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+
+        <label for="comment" class="required">Your message</label>
+        <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+
+        <input type="hidden" name="comment_post_ID" value="<?php echo($comment_post_ID); ?>" id="comment_post_ID" />
+        <input name="submit" type="submit" value="Submit comment" />
+        
+      </form>
+      
+    </div>
+      
+  </section> -->
+
+
+
+
+
+<div data-component="CommentsArea" id="comments-building-real-time-commenting-system" data-thread="/2012/05/building-real-time-commenting-system/" data-date="2012-05-09 10:56:12 +0000 UTC">
+  <div>
+    <div class="row">
+    <div class="col col-7">
+      <div class="article__comments" aria-live="polite" aria-relevant="additions">
+        <h2 class="h1">— Comments <span class="comments__comment-count sup">152</span></h2>
+              <div class="article__comment-wrapper">
+                <figure class="article__comment">
+                  <header>
+                    <figure class="author author--avatar-only">
+                      <div class="author__image-wrapper tilt">
+                        <div class="author__image">
+                          <img width="73" height="73" loading="lazy" decoding="async" src="https://smashingmagazine.com/images/userpics/avatarSM-8.png" alt="Tauno">
+                        </div>
+                      </div>
+                    </figure>
+                    <span>Tauno</span> wrote<time datetime="2012-05-09 18:45"> — May 9, 2012 18:45</time>
+                  </header>
+                  <div class="comment__content"><p><p>Just one question. Why are CSS and Image files in different folders?</p>
+</p></div><footer><button type="button" class="btn btn--white btn--white--bordered btn--medium">Reply</button></footer></figure></div><button type="button" class="btn btn--medium btn--load-comments btn--blue">Load all 152 comments&nbsp;↓</button></div></div>
+<div class="col col-5 comment-form__sticky">
+  <form>
+  <div class="comment__message-field"><div class="comment__reply-to-container"><label class="form__f  ield blurred comment__message-field comment__message-field"><label for="el-0.847219717988561" class="form__field__label">Your message</label><div class="input-wrapper"><textarea label="Your message" type="textarea" class="" id="el-0.847219717988561" inputmode="text" name="message"></textarea></div></label></div></div><label class="form__field blurred comment__name-field comment__name-field"><label for="el-0.6569927965021021" class="form__field__label">Your (real) name</label><div class="input-wrapper"><input label="Your (real) name" class="form__field__input" type="text" id="el-0.6569927965021021" inputmode="text" name="name" value="kun"></div></label><label class="form__field blurred comment__twitter-field comment__twitter-field"><label for="el-0.3846155491880292" class="form__field__label">Your Twitter (e.g. 'smashingmag')</label><div class="input-wrapper"><input label="Your Twitter (e.g. 'smashingmag')" class="form__field__input" type="text" id="el-0.3846155491880292" data-optional="true" inputmode="text" name="twitter" value="@Anestihefry"></div></label><div class="btn--lined"><button class="ladda-button btn btn--green btn--large btn--text-shadow auth__modal__btn ladda-button" data-style="expand-right"><span class="ladda-label"><span class="ladda-label">Post Comment</span></span><span class="ladda-spinner"></span></button></div></form></div></div></div></div>
+
+  
+    
+</section>
+
+
+
+
+<script type="text/javascript" src="{% static 'js/list.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/bootstrap/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/jquery/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/jquery/pooper.js' %}"></script>
+</body>
+</html>

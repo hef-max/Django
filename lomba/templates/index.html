@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}.com</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+	<div class="container col-xxl-8 px-9 py-5">
+      <div class="heading col-lg-6 text-white">
+        <h1 class="display-2 lh-1 mb-3 fw-bold">{{title}}</h1>
+        <p class="lead col-lg-9">find food here, we provide a variety of interesting information for those of you who are looking for or like food and there is a list of traditional foods here.</p>
+			</div>
+	</div>
+</div>
+
+
+<div class="container col-xxl-8 px-8 py-5">	
+<div class="heading-2 col-lg-5">
+	<h1 class="display-5 fw-bold lh-1 mb-3">What Is Culinary House?</h1>
+	<p class="lead">Culinary House is a platform for finding all kinds of food and including traditional food in the archipelago, especially in the West Java province.</p>
+</div>
+</div>
+
+
+
+
+
+<div class="body container col-xxl-8 px-8 py-5bg-light">
+	<div class="body-1 text-dark text-center">
+	<div class="row row-md">
+		<h3>JAWA BARAT</h3>
+		<p>Temuan arkeologi di Anyer menunjukkan adanya budaya logam perunggu dan besi sebelum milenium pertama. Gerabah tanah liat prasejarah zaman buni (Bekasi kuno) bisa ditemukan merentang dari Anyer sampai Cirebon.[butuh rujukan]
+
+		Wilayah Jawa Barat pada abad ke-5 merupakan bagian dari Kerajaan Tarumanagara.[butuh rujukan] Prasasti peninggalan Kerajaan Tarumanagara banyak tersebar di Jawa Barat. Ada tujuh prasasti yang ditulis dalam aksara Wengi (yang digunkan dalam masa Palawa India) dan bahasa Sansakerta yang sebagian besar menceritakan para raja Tarumanagara.[butuh rujukan]
+
+		Setelah runtuhnya kerajaan Tarumanagara, kekuasaan di bagian barat Pulau Jawa dari Ujung Kulon sampai Kali Serayu dilanjutkan oleh Kerajaan Sunda[butuh rujukan]. Salah satu prasasti dari zaman Kerajaan Sunda adalah prasasti Kebon Kopi II yang berasal dari tahun 932. Kerajaan Sunda beribu kota di Pakuan Pajajaran (sekarang kota Bogor).[butuh rujukan]
+
+		Pada abad ke-16, Kesultanan Demak tumbuh menjadi saingan ekonomi dan politik Kerajaan Sunda. Pelabuhan Cerbon (kelak menjadi Kota Cirebon) lepas dari Kerajaan Sunda karena pengaruh Kesultanan Demak. Pelabuhan ini kemudian tumbuh menjadi Kesultanan Cirebon yang memisahkan diri dari Kerajaan Sunda. Pelabuhan Banten juga lepas ke tangan Kesultanan Cirebon dan kemudian tumbuh menjadi Kesultanan Banten.
+
+		Untuk menghadapi ancaman ini, Sri Baduga Maharaja, raja Sunda saat itu, meminta putranya, Surawisesa untuk membuat perjanjian pertahanan keamanan dengan orang Portugis di Malaka untuk mencegah jatuhnya pelabuhan utama, yaitu Sunda Kalapa (sekarang Jakarta) kepada Kesultanan Cirebon dan Kesultanan Demak. Pada saat Surawisesa menjadi raja Sunda, dengan gelar Prabu Surawisesa Jayaperkosa, dibuatlah perjanjian pertahanan keamanan Sunda-Portugis, yang ditandai dengan Prasasti Perjanjian Sunda-Portugal, ditandatangani dalam tahun 1512. Sebagai imbalannya, Portugis diberi akses untuk membangun benteng dan gudang di Sunda Kalapa serta akses untuk perdagangan di sana. Untuk merealisasikan perjanjian pertahanan keamanan tersebut, pada tahun 1522 didirikan suatu monumen batu yang disebut padrão di tepi Ci Liwung. 
+		</p>
+		</div>
+	</div>
+</div>
+
+<div class="container col-xxl-8 px-8 py-5">	
+	<div class="col-lg-5">
+		<div class="row">
+			<h3>DAERAH</h3>
+				<nav class="list">
+					<ul class="me-auto">
+						{% for link, name in place %} 
+						<li>
+							<a class="nav-link active" aria-current="page" href="{{link}}">{{name}}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+		</div>
+	</div>
+</div>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+</div>
+
+
+<!-- <div class="container-fluid">
+	<div class="container bg-white text-center text-dark">
+		<div class="row">
+			<h3>DAERAH</h3>
+			<nav class="list-on">
+			<ul class="me-auto ">
+				{% for link, name in place %} 
+				<li>
+					<a class="nav-link active text-white" aria-current="page" href="{{link}}">{{name}}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		</div>
+	</div>
+</div>
+ -->
+
+
+
+
+
+<!-- <div class="container-fluid">
+	<div class="container bg-secondary text-center text-white shadow" style="margin-top: 10px; ">
+		<div class="row">
+			<h3 style="padding-left: 45px; margin-top: 5px;">DAERAH</h3>
+			<nav class="list-on">
+			<ul class="me-auto ">
+				{% for link, name in place %} 
+				<li>
+					<a class="nav-link active text-white" aria-current="page" href="{{link}}">{{name}}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		</div>
+	</div>
+</div> -->
+
+
+	
+<!-- <div class="container-fluid">
+	<div class="container bg-dark text-white text-center shadow" style="margin-top: 10px; border-radius: 25px;">
+		<div class="row" id="about">
+			<h2 class="display-6">About Us</h2>
+			<h3 style="font-family: time; padding-top: 10px;">Siapa kami?</h3>
+		  	<p>Kami adalah perusahan jasa iklan yang bergerak di bidang teknologi informasi yang mencangkup pasar dengan skala internasional. Kami menyediakan jasa pembuatan iklan yang ingin anda buat, tapi kami hanya membuat untuk orang yang berjualan makanan. Tujuan kami adalah untuk memudahkan para pengguna mencari makanan khusunya para turis atau penduduk indonesia sendiri yang bingung dalam mencari makanan yang enak khas tradisional di berbagai daerah di Indonesia.
+		  	</p>
+		</div>
+	</div>
+</div>
+
+
+<section class="services">
+	  <div class="service-cards-wrapper">
+
+        <div class="service-cards" id="service">
+            <h2 class="text-center">Service</h2>
+            <p>lorm ipsum dolor sit amet, container</p>
+        </div>
+
+        <div class="service-cards" id="contact">
+            <h2 class="text-center">Contact Us</h2>
+            <p><b>INDONESIAN</b></p>
+            <p>Jl.Cipaat, Bongas, Kabupaten Indramayu, Jawa Barat 45255</p>
+            <P>Email Us : {{email}}</P>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+	<script type="text/javascript" src="{% static 'vendor/bootstrap/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendor/bootstrap/popper.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendor/bootstrap/jquery.js' %}"></script>
+</body>
+</html>

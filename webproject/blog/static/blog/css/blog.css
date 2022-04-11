@@ -1,0 +1,24 @@
+nav a:hover{
+  background-color: #e6e2eb;
+  border-radius: 10px;
+}
+.service{
+  width: 100%;
+}
+.service-cards-wrapper{
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.service-cards{
+  flex: 1 1 250px;
+  max-width: 550px;
+  margin-top: 35px;
+  margin-right: 55px;
+  background-color: #fff;
+  color: #565656;
+  padding: 10px 15px 25px;
+  border-radius: 5px;
+  position: relative;
+}

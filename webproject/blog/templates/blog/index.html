@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/vendor/bootstrap/bootstrap.css' %}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display:swap">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/blog.css' %}">
+</head>
+<body>
+
+{% include "snippets/navbar.html" %}
+
+<section class="services">
+	<div class="service-cards-wrapper">
+
+		<div class="service-cards">
+			<img src="{% static img %}" style="height: 300px;">
+        </div>
+
+        <div class="service-cards">
+        	{% for post in Posts %}
+           		{% if post.title ==  judul %}
+	            	<h2 class="text-right">{{post.title}}</h2>
+	            	<p>{{post.body}}</p>
+	            {% endif %}
+            {% endfor %}
+  	   	</div>
+
+ 	</div>
+</section>
+
+
+	<script type="text/javascript" src="{% static 'blog/vendor/bootstrap/bootstrap.js' %}"></script>
+	<script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+</body>
+</html>
